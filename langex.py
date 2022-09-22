@@ -38,6 +38,8 @@ def main():
             writer = csv.writer(f, delimiter=";")
             writer.writerows(remove_column_from_matrix(
                 spreadsheet.get_all_values(), 0))
+            sheets[lng]["spreadsheet"] = remove_column_from_matrix(
+                spreadsheet.get_all_values(), 0)
     done()
 
     log("Generating matches...", end=" ")
