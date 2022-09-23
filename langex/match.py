@@ -61,8 +61,9 @@ class User:
         self.hobbies = {}
 
         for i, cell in enumerate(table_row):
-            if i in [i for i in range(4)]:
+            if i in [i for i in range(6)] or i in (7, 15):
                 continue
+
             self.hobbies[column_titles[i]] = Hobby(column_titles[i], cell)
 
     def __str__(self):
