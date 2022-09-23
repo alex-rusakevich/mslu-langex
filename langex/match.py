@@ -51,9 +51,17 @@ def generate_matches(sheets):
             users.append(User(user_table_row, f"{key}-{counter}"))
             counter += 1
 
-    matches.append(UserMatch(users[0], users[1], 1.0))
-    matches.append(UserMatch(users[1], users[0], 1.0))
+    matches.append(UserMatch(users[0], users[1], 100))
+    matches.append(UserMatch(users[1], users[0], 100))
 
     result = [("user 1", "user 2", "match, %")]
+
+    sorted_matches = []
+    for mtch in matches:
+        if not mtch in sorted_matches and mtch.percent >= 100/3:
+            sorted_matches.append(mtch)
+
+    for mtch in sorted_matches:
+        result.append([mtch.user1, mtch.user2, mtch.percent])
 
     return result
