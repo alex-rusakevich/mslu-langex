@@ -4,7 +4,6 @@ from oauth2client.service_account import ServiceAccountCredentials
 from langex.match import generate_matches
 from langex.utils import *
 import argparse
-import sys
 
 
 def main():
@@ -40,8 +39,7 @@ def main():
         log("Writing CSV...", end=" ")
         for lng in sheets.keys():
             spreadsheet = sheets[lng]["spreadsheet"].worksheets()[0]
-            filename = lng + '-worksheet-' + \
-                str(datetime.date.today()) + '.csv'
+            filename = lng + '-worksheet.csv'
             with open(filename, 'w', encoding="utf-8", newline="") as f:
                 writer = csv.writer(f, delimiter=";")
                 writer.writerows(remove_column_from_matrix(
@@ -53,7 +51,7 @@ def main():
         pass
 
     log("Generating matches...", end=" ")
-    with open("matches-" + str(datetime.date.today()) + '.csv', 'w', encoding="utf-8", newline="") as f:
+    with open("matches.csv", 'w', encoding="utf-8", newline="") as f:
         writer = csv.writer(f, delimiter=";")
         writer.writerows(generate_matches(sheets))
     done()
