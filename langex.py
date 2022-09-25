@@ -19,19 +19,20 @@ def main():
 
     log("Langex started.")
 
-    sheets = {}
+    sheets = {
+        "eng": {
+            "id": "1p7tMW5M9Ibedfv-FD7lw9lUC7qUd6udrPOLshnur3xk",
+            "spreadsheet": [],
+            # Fields numbers to be ignored
+            "ignore": [1, 2, 3, 4, 5, 6, 8, 16],
+        }
+    }
+
     if not args.offline:
         scope = ['https://spreadsheets.google.com/feeds',
                  'https://www.googleapis.com/auth/drive']
         credentials = ServiceAccountCredentials.from_json_keyfile_name(
             'credentials.json', scope)
-
-        sheets = {
-            "eng": {
-                "id": "1p7tMW5M9Ibedfv-FD7lw9lUC7qUd6udrPOLshnur3xk",
-                "spreadsheet": []
-            }
-        }
 
         log("Logging in google services...", end=" ")
         client = gspread.authorize(credentials)
@@ -79,8 +80,6 @@ def main():
                 if not args.no_offline_strip:
                     sheets[lng]["spreadsheet"] = remove_column_from_matrix(
                         sheets[lng]["spreadsheet"], 0)
-
-                print(sheets[lng]["spreadsheet"])
 
                 log(f'Read "{filepath}"')
 

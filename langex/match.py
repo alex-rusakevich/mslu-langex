@@ -50,7 +50,7 @@ class User:
 
     hobbies = {}
 
-    def __init__(self, table_row, sheet_id):
+    def __init__(self, table_row, sheet_id, ignore=[]):
         global column_titles
 
         self.sheet_id = sheet_id
@@ -61,7 +61,7 @@ class User:
         self.hobbies = {}
 
         for i, cell in enumerate(table_row):
-            if i in [i for i in range(6)] or i in (7, 15):
+            if i in [ign-1 for ign in ignore]:
                 continue
 
             self.hobbies[column_titles[i]] = Hobby(column_titles[i], cell)
@@ -90,7 +90,11 @@ def generate_matches(sheets):
 
         counter = 1
         for user_table_row in sheets[key]["spreadsheet"][1:]:
-            users.append(User(user_table_row, f"{key}-{counter}"))
+            if "".join(user_table_row).strip() == "":
+                continue
+
+            users.append(
+                User(user_table_row, f"{key}-{counter}", sheets[key]["ignore"]))
             counter += 1
 
     for user in users:
