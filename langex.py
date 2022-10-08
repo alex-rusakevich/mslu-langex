@@ -24,7 +24,11 @@ def main():
             "id": "1p7tMW5M9Ibedfv-FD7lw9lUC7qUd6udrPOLshnur3xk",
             "spreadsheet": [],
             # Fields numbers to be ignored
-            "ignore": [1, 2, 3, 4, 5, 6, 8, 16],
+            "ignore": ["My name is", "My faculty is", "I speak",
+                       "I want to learn", "Country of residence", "I use these social networks:",
+                       "Approximate level of English", "Адрес электронной почты"],
+            # Fields that probably not the same (in this case weight is 0), but when it is, weight is 2 x 100 points = 200
+            "rarely_same": ["My favourite book is", "My favourite film/series is", "My favourite song(-s)"]
         }
     }
 

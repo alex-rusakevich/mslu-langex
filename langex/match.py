@@ -1,3 +1,4 @@
+from glob import glob
 from langex.utils import *
 from difflib import SequenceMatcher
 
@@ -5,6 +6,17 @@ from difflib import SequenceMatcher
 users = []
 matches = []
 column_titles = []
+rarely_same = []
+
+
+def does_it_approx_match(a, b):
+    return SequenceMatcher(a=a, b=b).ratio()*100 > 90
+
+
+def get_value_by_title(row, title):
+    for i, coltitle in enumerate(column_titles):
+        if SequenceMatcher(a=coltitle, b=title).ratio()*100 > 93:
+            return row[i]
 
 
 class UserMatch:
@@ -25,15 +37,12 @@ class Hobby:
     name = ""
     value = ""
     weight = 1.0
+    rarely_same = False
 
-    def __init__(self, name, value, weight=1.0):
+    def __init__(self, name, value, weight=1.0, rarely_same=False):
         self.name = name
         self.value = ",".join(sorted([i.strip() for i in value.split(",")]))
-
-        if self.name.strip() in ["My favourite book is", "My favourite film/series is"]:
-            self.weight = 0.3
-        else:
-            self.weight = weight
+        self.rarely_same = rarely_same
 
     def __str__(self):
         return f"{self.name}({self.weight}): {self.value}"
@@ -49,22 +58,41 @@ class User:
     lng_want_to_know = []
 
     hobbies = {}
+    email = ""
 
-    def __init__(self, table_row, sheet_id, ignore=[]):
+    def __init__(self, table_row, sheet_id, ignore=[], rarely_same_cols=[]):
         global column_titles
+        global rarely_same
+        rarely_same = rarely_same_cols
 
         self.sheet_id = sheet_id
+
         self.name = table_row[0]
-        self.lng_knows = [i.strip().lower() for i in table_row[2].split(",")]
+        self.email = get_value_by_title(table_row, "Адрес электронной почты")
+
+        self.lng_knows = [i.strip().lower() for i in get_value_by_title(
+            table_row, "I speak...").split(",")]
         self.lng_want_to_know = [i.strip().lower()
-                                 for i in table_row[3].split(",")]
+                                 for i in get_value_by_title(table_row, "I want to learn...").split(",")]
         self.hobbies = {}
 
         for i, cell in enumerate(table_row):
-            if i in [ign-1 for ign in ignore]:
-                continue
+            ignored = False
+            for ign in ignore:
+                if does_it_approx_match(ign, cell):
+                    ignored = True
+                    break
 
-            self.hobbies[column_titles[i]] = Hobby(column_titles[i], cell)
+            if not ignored:
+                is_rarely_same = False
+                for rscol in rarely_same:
+
+                    if does_it_approx_match(rscol, column_titles[i]):
+                        is_rarely_same = True
+                        break
+
+                self.hobbies[column_titles[i]] = Hobby(
+                    column_titles[i], cell.lower(), rarely_same=is_rarely_same)
 
     def __str__(self):
         return f"{self.name} #{self.sheet_id}"
@@ -74,10 +102,22 @@ class User:
         max_possible = 0
 
         for hobby_name in self.hobbies.keys():
-            weight = self.hobbies[hobby_name].weight
-            average += SequenceMatcher(a=self.hobbies[hobby_name].value,
-                                       b=user2.hobbies[hobby_name].value).ratio()*100*weight
-            max_possible += 100 * weight
+            ratio = SequenceMatcher(a=self.hobbies[hobby_name].value,
+                                    b=user2.hobbies[hobby_name].value).ratio()*100
+
+            weight = 1
+
+            if self.hobbies[hobby_name].rarely_same:
+
+                if ratio > 80:
+                    weight = 2
+                else:
+                    weight = 0
+            else:
+                weight = self.hobbies[hobby_name].weight
+
+            average += ratio*weight
+            max_possible += 100
 
         return UserMatch(self, user2, int(round(average / max_possible * 100)))
 
@@ -94,7 +134,7 @@ def generate_matches(sheets):
                 continue
 
             users.append(
-                User(user_table_row, f"{key}-{counter}", sheets[key]["ignore"]))
+                User(user_table_row, f"{key}-{counter}", sheets[key]["ignore"], sheets[key]["rarely_same"]))
             counter += 1
 
     for user in users:
@@ -106,7 +146,8 @@ def generate_matches(sheets):
                 if lang in user.lng_want_to_know:
                     matches.append(user.match_with(user2))
 
-    result = [("user 1", "user 2", "match, %")]
+    result = [("user#1", "user#2", "match, %", "user#1's email",
+               "sent", "user#2's email", "sent")]
 
     sorted_matches = []
     for mtch in matches:
