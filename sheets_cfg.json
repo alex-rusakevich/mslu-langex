@@ -1,6 +1,6 @@
 {
     "eng": {
-        "id": "1p7tMW5M9Ibedfv-FD7lw9lUC7qUd6udrPOLshnur3xk",
+        "id": "",
         "spreadsheet": [],
         "ignore": [
             "My name is",
@@ -15,7 +15,8 @@
         "rarely_same": [
             "My favourite book is",
             "My favourite film/series is",
-            "My favourite song(-s)"
+            "My favourite song(-s)",
+            "My motto is"
         ],
         "treat_as_empty": [
             "none",

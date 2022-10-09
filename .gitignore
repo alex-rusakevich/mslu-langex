@@ -2,3 +2,4 @@
 *.csv
 __pycache__/
 credentials.json
+sheets_id.json
