@@ -1,0 +1,29 @@
+{
+    "eng": {
+        "id": "1p7tMW5M9Ibedfv-FD7lw9lUC7qUd6udrPOLshnur3xk",
+        "spreadsheet": [],
+        "ignore": [
+            "My name is",
+            "My faculty is",
+            "I speak",
+            "I want to learn",
+            "Country of residence",
+            "I use these social networks:",
+            "Approximate level of English",
+            "Адрес электронной почты"
+        ],
+        "rarely_same": [
+            "My favourite book is",
+            "My favourite film/series is",
+            "My favourite song(-s)"
+        ],
+        "treat_as_empty": [
+            "none",
+            "no",
+            "-",
+            "i don't have",
+            "neither",
+            "nope"
+        ]
+    }
+}

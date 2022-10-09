@@ -5,6 +5,7 @@ from langex.match import generate_matches
 from langex.utils import *
 import argparse
 import re
+import json
 from os import listdir
 from os.path import isfile
 
@@ -19,18 +20,7 @@ def main():
 
     log("Langex started.")
 
-    sheets = {
-        "eng": {
-            "id": "1p7tMW5M9Ibedfv-FD7lw9lUC7qUd6udrPOLshnur3xk",
-            "spreadsheet": [],
-            # Fields numbers to be ignored
-            "ignore": ["My name is", "My faculty is", "I speak",
-                       "I want to learn", "Country of residence", "I use these social networks:",
-                       "Approximate level of English", "Адрес электронной почты"],
-            # Fields that probably not the same (in this case weight is 0), but when it is, weight is 2 x 100 points = 200
-            "rarely_same": ["My favourite book is", "My favourite film/series is", "My favourite song(-s)"]
-        }
-    }
+    sheets = json.load(open("./sheets_cfg.json", "r", encoding="utf-8"))
 
     if not args.offline:
         scope = ['https://spreadsheets.google.com/feeds',

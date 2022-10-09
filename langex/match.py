@@ -7,6 +7,7 @@ users = []
 matches = []
 column_titles = []
 rarely_same = []
+treat_as_empty = []
 
 
 def does_it_approx_match(a, b):
@@ -17,20 +18,26 @@ def get_value_by_title(row, title):
     for i, coltitle in enumerate(column_titles):
         if SequenceMatcher(a=coltitle, b=title).ratio()*100 > 93:
             return row[i]
+    return None
+
+
+def get_user_by_sheet_id(sheet_id):
+    for user in users:
+        if user.sheet_id == sheet_id:
+            return user
+    return None
 
 
 class UserMatch:
     def __init__(self, user1, user2, percent):
-        user1, user2 = sorted([user1.sheet_id, user2.sheet_id])
-        self.user1 = user1
-        self.user2 = user2
+        self.user1_id, self.user2_id = sorted([user1.sheet_id, user2.sheet_id])
         self.percent = percent
 
     def __eq__(self, obj):
         if not isinstance(obj, UserMatch):
             return False
-        return (self.user1 == obj.user1 and
-                self.user2 == obj.user2)
+        return (self.user1_id == obj.user1_id and
+                self.user2_id == obj.user2_id)
 
 
 class Hobby:
@@ -40,6 +47,10 @@ class Hobby:
     rarely_same = False
 
     def __init__(self, name, value, weight=1.0, rarely_same=False):
+        global treat_as_empty
+        if name.strip().lower() in treat_as_empty:
+            name = ""
+
         self.name = name
         self.value = ",".join(sorted([i.strip() for i in value.split(",")]))
         self.rarely_same = rarely_same
@@ -110,7 +121,7 @@ class User:
             if self.hobbies[hobby_name].rarely_same:
 
                 if ratio > 80:
-                    weight = 2
+                    weight = 5
                 else:
                     weight = 0
             else:
@@ -123,10 +134,15 @@ class User:
 
 
 def generate_matches(sheets):
-    for key in sheets.keys():
+    result = [("user#1", "user#2", "match, %", "user#1's email",
+               "sent?", "user#2's email", "sent?")]
 
+    for key in sheets.keys():
         global column_titles
         column_titles = sheets[key]["spreadsheet"][0]
+
+        global treat_as_empty
+        treat_as_empty = sheets[key]["treat_as_empty"]
 
         counter = 1
         for user_table_row in sheets[key]["spreadsheet"][1:]:
@@ -137,24 +153,22 @@ def generate_matches(sheets):
                 User(user_table_row, f"{key}-{counter}", sheets[key]["ignore"], sheets[key]["rarely_same"]))
             counter += 1
 
-    for user in users:
-        for user2 in users:
-            if user == user2:
-                continue
+        for user in users:
+            for user2 in users:
+                if user == user2:
+                    continue
 
-            for lang in user2.lng_knows:
-                if lang in user.lng_want_to_know:
-                    matches.append(user.match_with(user2))
+                for lang in user2.lng_knows:
+                    if lang in user.lng_want_to_know:
+                        matches.append(user.match_with(user2))
 
-    result = [("user#1", "user#2", "match, %", "user#1's email",
-               "sent", "user#2's email", "sent")]
+        sorted_matches = []
+        for mtch in matches:
+            if not mtch in sorted_matches and mtch.percent >= 100/3:
+                sorted_matches.append(mtch)
 
-    sorted_matches = []
-    for mtch in matches:
-        if not mtch in sorted_matches and mtch.percent >= 100/3:
-            sorted_matches.append(mtch)
-
-    for mtch in sorted_matches:
-        result.append([mtch.user1, mtch.user2, mtch.percent])
+        for mtch in sorted_matches:
+            result.append([mtch.user1_id, mtch.user2_id, mtch.percent, get_user_by_sheet_id(
+                mtch.user1_id).email, "No", get_user_by_sheet_id(mtch.user2_id).email, "No"])
 
     return result
