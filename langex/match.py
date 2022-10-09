@@ -1,4 +1,5 @@
 from glob import glob
+from xml.dom import NotFoundErr
 from langex.utils import *
 from difflib import SequenceMatcher
 
@@ -25,7 +26,7 @@ def get_user_by_sheet_id(sheet_id):
     for user in users:
         if user.sheet_id == sheet_id:
             return user
-    return None
+    raise Exception(f"User {sheet_id} was not found.")
 
 
 class UserMatch:
