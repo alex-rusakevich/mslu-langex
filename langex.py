@@ -78,9 +78,25 @@ def main():
                 log(f'Read "{filepath}"')
 
     log("Generating matches...", end=" ")
+    prev_matches_rows = []
+    with open("matches.csv", 'r', encoding="utf-8") as f:
+        for line in f.readlines()[1:]:
+            line = re.sub(r"\s*;\s*", ";", line.strip())
+            prev_matches_rows.append(line)
+
     with open("matches.csv", 'w', encoding="utf-8", newline="") as f:
         writer = csv.writer(f, delimiter=";")
-        writer.writerows(generate_matches(sheets))
+        matches = generate_matches(sheets)
+
+        for match in matches:  # Merging new matches result with the old ones
+            match_found = False
+            for prev_match_row in prev_matches_rows:
+                if prev_match_row.startswith(";".join(match[:2])):
+                    writer.writerow(
+                        list(match[:3]) + list(prev_match_row.split(";")[3:]))
+                    match_found = True
+            if not match_found:
+                writer.writerow(match)
     done()
 
     log("Finished.")
