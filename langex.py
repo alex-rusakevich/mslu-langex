@@ -126,6 +126,8 @@ def main():
                 writer.writerow(match)
 
     if args.send_emails:
+        log("Started sending emails...", end=" ")
+
         def msg_gen(user_to, users_pair, match_perc):
             def join_langs(lang_list):
                 if isinstance(lang_list, str):
@@ -168,6 +170,7 @@ def main():
             return f"Hello, {user_to.name}! You have {mtch} match with {users_pair.name} ({users_pair.email}), \
 who speaks {join_langs(users_pair.lng_knows)}. Happy learning {langs} together!"
 
+        sent = 0
         with open("matches.csv", 'r', encoding="utf-8") as f:
             for line in f.readlines()[1:]:
                 values = list(csv.reader(
@@ -179,7 +182,9 @@ who speaks {join_langs(users_pair.lng_knows)}. Happy learning {langs} together!"
                 msg1_to_2 = msg_gen(usr1, usr2, values[2])
                 msg2_to_1 = msg_gen(usr2, usr1, values[2])
 
-                print(msg1_to_2, msg2_to_1, "\n")
+                sent += 2
+
+        print("Done, %i emails sent." % (sent,))
 
     if args.offline == False:
         log("Uploading matches...", end=" ")
