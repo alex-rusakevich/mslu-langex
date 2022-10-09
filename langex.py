@@ -7,6 +7,7 @@ from langex.match import generate_matches, get_user_by_sheet_id
 from langex.utils import *
 import argparse
 import re
+import io
 import json
 import time
 from os import listdir
@@ -171,8 +172,13 @@ def main():
 who speaks {join_langs(users_pair.lng_knows)}. Happy learning {langs} together!"
 
         sent = 0
+        new_matches_lines = []
         with open("matches.csv", 'r', encoding="utf-8") as f:
-            for line in f.readlines()[1:]:
+            prev_lines = f.readlines()
+            new_matches_lines = []
+            new_matches_lines.append(prev_lines[0])
+
+            for line in prev_lines[1:]:
                 values = list(csv.reader(
                     StringIO(line.strip()), delimiter=","))[0]
 
@@ -182,7 +188,22 @@ who speaks {join_langs(users_pair.lng_knows)}. Happy learning {langs} together!"
                 msg1_to_2 = msg_gen(usr1, usr2, values[2])
                 msg2_to_1 = msg_gen(usr2, usr1, values[2])
 
+                # Msg from 1 to 2 is sent
+                values[4] = "Yes"
+
+                # Msg from 2 to 1 is sent
+                values[6] = "Yes"
+
+                new_csv_line = io.StringIO()
+                writer = csv.writer(new_csv_line, delimiter=",")
+                writer.writerow(values)
+
+                new_matches_lines.append(new_csv_line.getvalue())
+
                 sent += 2
+
+        with open("matches.csv", 'w', encoding="utf-8", newline="\n") as f:
+            f.writelines(new_matches_lines)
 
         print("Done, %i emails sent." % (sent,))
 
