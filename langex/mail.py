@@ -1,11 +1,16 @@
 import smtplib
 import json
-
+import traceback
+from email.message import EmailMessage
 
 mail_cred = json.load(open("./mail_cred.json", "r", encoding="utf-8"))
 
 gmail_user = mail_cred["adress"]
 gmail_password = mail_cred["app-password"]
+
+server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+server.ehlo()
+server.login(gmail_user, gmail_password)
 
 
 def msg_gen(user_to, users_pair, match_perc):
@@ -48,32 +53,33 @@ def msg_gen(user_to, users_pair, match_perc):
         mtch = "a"
 
     return f"Hello, {user_to.name}! You have {mtch} match with {users_pair.name} ({users_pair.email}), \
-who speaks {join_langs(users_pair.lng_knows)}. They use these social networks: {users_pair.social_networks.strip()}.\n\
-    Happy learning {langs} together!"
+who speaks {join_langs(users_pair.lng_knows)}. They use these social networks: {users_pair.social_networks.strip()}.\
+\nHappy learning {langs} together!"
 
 
-def send_msg(to, subject, msg):
+def close_msg_connection():
+    server.close()
+
+
+def send_msg(to, subject, msg_txt):
+    global server
+
     if isinstance(to, str):
         to = [to, ]
 
-    sent_from = gmail_user
-    body = msg
+    msg = EmailMessage()
+    msg.set_content(str(msg_txt))
 
-    email_text = """\
-    From: %s
-    To: %s
-    Subject: %s
-
-    %s
-    """ % (sent_from, ", ".join(to), subject, body)
+    msg['Subject'] = str(subject)
+    msg['From'] = str(gmail_user)
+    msg['To'] = str(", ".join(to))
 
     try:
-        server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-        server.ehlo()
-        server.login(gmail_user, gmail_password)
-        server.sendmail(sent_from, to, email_text)
-        server.close()
+        server.send_message(msg)
 
         print(f'Email sent to {", ".join(to)}')
-    except:
-        print(f'Something went wrong while sending email to {", ".join(to)}')
+        return True
+    except Exception as exception:
+        print(
+            f'Something went wrong while sending email to {", ".join(to)}: {traceback.format_exc()}')
+        return False

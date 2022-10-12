@@ -12,7 +12,7 @@ import json
 import time
 from os import listdir
 from os.path import isfile
-from langex.mail import msg_gen, send_msg
+from langex.mail import msg_gen, send_msg, close_msg_connection
 
 
 def main():
@@ -128,9 +128,11 @@ def main():
                 writer.writerow(match)
 
     if args.send_emails:
-        log("Started sending emails...", end=" ")
+        log("Started sending emails...")
 
         sent = 0
+        total = 0
+
         new_matches_lines = []
         with open("matches.csv", 'r', encoding="utf-8") as f:
             prev_lines = f.readlines()
@@ -146,20 +148,26 @@ def main():
 
                 if values[4] != "Yes":
                     msg1_to_2 = msg_gen(usr1, usr2, values[2])
-                    send_msg(
+                    is_sent = send_msg(
                         usr1.email, "You've got a new language partner!", msg1_to_2)
-                    # Msg from 1 to 2 is sent
-                    values[4] = "Yes"
+
+                    if is_sent:
+                        # Msg from 1 to 2 is sent
+                        values[4] = "Yes"
+                        sent += 1
                 else:
                     print(
                         f"Email containing info about this partner ({usr2.email})  was already sent to {usr1.email} before.")
 
                 if values[6] != "Yes":
                     msg2_to_1 = msg_gen(usr2, usr1, values[2])
-                    send_msg(
+                    is_sent = send_msg(
                         usr2.email, "You've got a new language partner!", msg2_to_1)
-                    # Msg from 2 to 1 is sent
-                    values[6] = "Yes"
+
+                    if is_sent:
+                        # Msg from 2 to 1 is sent
+                        values[6] = "Yes"
+                        sent += 1
                 else:
                     print(
                         f"Email containing info about this partner ({usr1.email}) was already sent to {usr2.email} before.")
@@ -169,13 +177,13 @@ def main():
                 writer.writerow(values)
 
                 new_matches_lines.append(new_csv_line.getvalue())
-
-                sent += 2
+                total += 2
 
         with open("matches.csv", 'w', encoding="utf-8", newline="\n") as f:
             f.writelines(new_matches_lines)
 
-        print("Done, %i emails sent." % (sent,))
+        print("Done, %i/%i emails sent." % (sent, total))
+        close_msg_connection()
 
     if args.offline == False:
         log("Uploading matches...", end=" ")

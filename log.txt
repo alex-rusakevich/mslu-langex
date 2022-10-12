@@ -1,0 +1,1997 @@
+Something went wrong while sending email to vikal.o.l.live@gmail.com: Traceback (most recent call last):
+  File "D:\Development\mslu-langex\langex\mail.py", line 78, in send_msg
+    server.send_message(msg)
+  File "C:\Python39\lib\smtplib.py", line 984, in send_message
+    g.flatten(msg_copy, linesep='\r\n')
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 218, in _dispatch
+    meth(msg)
+  File "C:\Python39\lib\email\generator.py", line 362, in _handle_message
+    g.flatten(msg.get_payload(0), unixfrom=False, linesep=self._NL)
+  File "C:\Python39\lib\email\generator.py", line 116, in flatten
+    self._write(msg)
+  File "C:\Python39\lib\email\generator.py", line 181, in _write
+    self._dispatch(msg)
+  File "C:\Python39\lib\email\generator.py", line 209, in _dispatch
+    main = msg.get_content_maintype()
+  File "C:\Python39\lib\email\message.py", line 594, in get_content_maintype
+    ctype = self.get_content_type()
+  File "C:\Python39\lib\email\message.py", line 578, in get_content_type
+    value = self.get('content-type', missing)
+  File "C:\Python39\lib\email\message.py", line 471, in get
+    return self.policy.header_fetch_parse(k, v)
+  File "C:\Python39\lib\email\policy.py", line 159, in header_fetch_parse
+    if hasattr(value, 'name'):
+RecursionError: maximum recursion depth exceeded
+
