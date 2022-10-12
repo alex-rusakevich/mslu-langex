@@ -81,6 +81,8 @@ class User:
 
         self.name = table_row[0]
         self.email = get_value_by_title(table_row, "Адрес электронной почты")
+        self.social_networks = get_value_by_title(
+            table_row, "I use these social networks:")
 
         self.lng_knows = [i.strip().lower() for i in get_value_by_title(
             table_row, "I speak...").split(",")]

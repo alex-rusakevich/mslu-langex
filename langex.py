@@ -12,6 +12,7 @@ import json
 import time
 from os import listdir
 from os.path import isfile
+from langex.mail import msg_gen, send_msg
 
 
 def main():
@@ -129,48 +130,6 @@ def main():
     if args.send_emails:
         log("Started sending emails...", end=" ")
 
-        def msg_gen(user_to, users_pair, match_perc):
-            def join_langs(lang_list):
-                if isinstance(lang_list, str):
-                    return lang_list
-
-                lgs = []
-                for l in lang_list:
-                    lgs.append(l.title())
-
-                if len(lgs) == 0:
-                    return ""
-                elif len(lgs) == 1:
-                    return lgs[0]
-                else:
-                    return ", ".join(lgs[:-1]) + " and " + lgs[-1]
-
-            langs = []
-
-            for lang in users_pair.lng_knows:
-                if lang in user_to.lng_want_to_know:
-                    langs.append(lang)
-
-            for lang in user_to.lng_knows:
-                if lang in users_pair.lng_want_to_know:
-                    langs.append(lang)
-
-            langs = join_langs(list(set(langs)))
-
-            mtch = ""
-            match_perc = int(match_perc)
-            if match_perc > 90:
-                mtch = "a perfect"
-            elif match_perc > (100/3)*2:
-                mtch = "an awesome"
-            elif match_perc > 50:
-                mtch = "a very good"
-            else:
-                mtch = "a"
-
-            return f"Hello, {user_to.name}! You have {mtch} match with {users_pair.name} ({users_pair.email}), \
-who speaks {join_langs(users_pair.lng_knows)}. Happy learning {langs} together!"
-
         sent = 0
         new_matches_lines = []
         with open("matches.csv", 'r', encoding="utf-8") as f:
@@ -185,14 +144,25 @@ who speaks {join_langs(users_pair.lng_knows)}. Happy learning {langs} together!"
                 usr1, usr2 = get_user_by_sheet_id(
                     values[0]), get_user_by_sheet_id(values[1])
 
-                msg1_to_2 = msg_gen(usr1, usr2, values[2])
-                msg2_to_1 = msg_gen(usr2, usr1, values[2])
+                if values[4] != "Yes":
+                    msg1_to_2 = msg_gen(usr1, usr2, values[2])
+                    send_msg(
+                        usr1.email, "You've got a new language partner!", msg1_to_2)
+                    # Msg from 1 to 2 is sent
+                    values[4] = "Yes"
+                else:
+                    print(
+                        f"Email containing info about this partner ({usr2.email})  was already sent to {usr1.email} before.")
 
-                # Msg from 1 to 2 is sent
-                values[4] = "Yes"
-
-                # Msg from 2 to 1 is sent
-                values[6] = "Yes"
+                if values[6] != "Yes":
+                    msg2_to_1 = msg_gen(usr2, usr1, values[2])
+                    send_msg(
+                        usr2.email, "You've got a new language partner!", msg2_to_1)
+                    # Msg from 2 to 1 is sent
+                    values[6] = "Yes"
+                else:
+                    print(
+                        f"Email containing info about this partner ({usr1.email}) was already sent to {usr2.email} before.")
 
                 new_csv_line = io.StringIO()
                 writer = csv.writer(new_csv_line, delimiter=",")
