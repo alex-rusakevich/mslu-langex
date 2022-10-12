@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 gspread = "*"
 oauth2client = "*"
+httplib2 = "*"
+oauth2 = "*"
+apiclient = "*"
+google-api-python-client = "*"
 
 [dev-packages]
 
