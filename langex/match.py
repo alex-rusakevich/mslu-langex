@@ -2,6 +2,7 @@ from glob import glob
 from xml.dom import NotFoundErr
 from langex.utils import *
 from difflib import SequenceMatcher
+import random
 
 
 users = []
@@ -151,8 +152,10 @@ class User:
             max_possible += 100
 
         perc_result = int(round(average / max_possible * 100))
+        perc_result = int(round(perc_result * (16/len(self.hobbies))))
+
         if perc_result > 100:
-            perc_result = 100
+            perc_result = 90 + random.randint(0, 9)
 
         return UserMatch(self, user2, perc_result)
 
