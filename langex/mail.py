@@ -43,13 +43,11 @@ def msg_gen(user_to, users_pair, match_perc):
 
     mtch = ""
     match_perc = int(match_perc)
-    if match_perc > 90:
+    if match_perc >= 90:
         mtch = "a perfect"
-    elif match_perc > (100/3)*2:
-        mtch = "an awesome"
-    elif match_perc > 50:
+    elif match_perc >= 75:
         mtch = "a very good"
-    else:
+    elif match_perc >= 50:
         mtch = "a"
 
     return f"Hello, {user_to.name}! You have {mtch} match with {users_pair.name} ({users_pair.email}), \

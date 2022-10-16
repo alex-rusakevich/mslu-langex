@@ -29,9 +29,22 @@ def get_user_by_sheet_id(sheet_id):
     raise Exception(f"User {sheet_id} was not found.")
 
 
+def sort_id_func(sheet_id):
+    sh_user_lang_table, sh_user_id = sheet_id.split(
+        "-")[0], int(sheet_id.split("-")[1])
+    weight = 0
+
+    if sh_user_lang_table == "eng":
+        weight = 100_000_000
+
+    weight += sh_user_id
+    return weight
+
+
 class UserMatch:
     def __init__(self, user1, user2, percent):
-        self.user1_id, self.user2_id = sorted([user1.sheet_id, user2.sheet_id])
+        self.user1_id, self.user2_id = sorted(
+            [user1.sheet_id, user2.sheet_id], key=sort_id_func)
         self.percent = percent
 
     def __eq__(self, obj):
@@ -39,6 +52,10 @@ class UserMatch:
             return False
         return (self.user1_id == obj.user1_id and
                 self.user2_id == obj.user2_id)
+
+    @staticmethod
+    def sort_func(umatch):
+        return sort_id_func(umatch.user1_id)
 
 
 class Hobby:
@@ -133,7 +150,11 @@ class User:
             average += ratio*weight
             max_possible += 100
 
-        return UserMatch(self, user2, int(round(average / max_possible * 100)))
+        perc_result = int(round(average / max_possible * 100))
+        if perc_result > 100:
+            perc_result = 100
+
+        return UserMatch(self, user2, perc_result)
 
 
 def generate_matches(sheets):
@@ -167,8 +188,9 @@ def generate_matches(sheets):
 
         sorted_matches = []
         for mtch in matches:
-            if not mtch in sorted_matches and mtch.percent >= 100/3:
+            if not mtch in sorted_matches and mtch.percent >= 50:
                 sorted_matches.append(mtch)
+        sorted_matches.sort(key=UserMatch.sort_func)
 
         for mtch in sorted_matches:
             result.append([mtch.user1_id, mtch.user2_id, mtch.percent, get_user_by_sheet_id(
