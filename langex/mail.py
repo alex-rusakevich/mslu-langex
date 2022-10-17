@@ -73,6 +73,7 @@ def send_msg(to, subject, msg_txt):
     msg['To'] = str(", ".join(to))
 
     try:
+        server.connect()
         server.send_message(msg)
 
         print(f'Email sent to {", ".join(to)}')

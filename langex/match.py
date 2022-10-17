@@ -111,7 +111,7 @@ class User:
         for i, cell in enumerate(table_row):
             ignored = False
             for ign in ignore:
-                if does_it_approx_match(ign, cell):
+                if does_it_approx_match(ign.strip(), column_titles[i]):
                     ignored = True
                     break
 
@@ -152,9 +152,9 @@ class User:
             max_possible += 100
 
         perc_result = int(round(average / max_possible * 100))
-        perc_result = int(round(perc_result * (16/len(self.hobbies))))
+        perc_result = int(round(perc_result * 0.90))
 
-        if perc_result > 100:
+        if perc_result >= 100:
             perc_result = 90 + random.randint(0, 9)
 
         return UserMatch(self, user2, perc_result)
@@ -167,6 +167,7 @@ def generate_matches(sheets):
     for key in sheets.keys():
         global column_titles
         column_titles = sheets[key]["spreadsheet"][0]
+        column_titles = [i.strip() for i in column_titles]
 
         global treat_as_empty
         treat_as_empty = sheets[key]["treat_as_empty"]
