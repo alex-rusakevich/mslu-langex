@@ -17,3 +17,9 @@ def remove_column_from_matrix(matrix, i):
         new_mat.append(row)
 
     return new_mat
+
+def ensure(obj):
+    if not obj:
+        raise Exception("This variable can't be empty")
+    else:
+        return obj

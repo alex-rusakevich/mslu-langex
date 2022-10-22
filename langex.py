@@ -30,7 +30,17 @@ def main():
 
     sheets = json.load(open("./sheets_cfg.json", "r", encoding="utf-8"))
 
-    sheets_id = json.load(open("./sheets_id.json", "r", encoding="utf-8"))
+    try:
+        sheets_id = json.load(open("./sheets_id.json", "r", encoding="utf-8"))
+    except FileNotFoundError:
+        with open("./sheets_id.json", "w", encoding="utf-8") as file:
+            file.writelines("""{
+    "__matches": "",
+    "eng": ""
+}""")
+            file.close()
+        raise FileNotFoundError
+
     for name in sheets_id.keys():
         if name == "__matches":
             continue

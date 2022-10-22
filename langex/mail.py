@@ -2,11 +2,21 @@ import smtplib
 import json
 import traceback
 from email.message import EmailMessage
+from langex.utils import ensure
 
-mail_cred = json.load(open("./mail_cred.json", "r", encoding="utf-8"))
+try:
+    mail_cred = json.load(open("./mail_cred.json", "r", encoding="utf-8"))
+except FileNotFoundError:
+    with open("./mail_cred.json", "w", encoding="utf-8") as file:
+        file.writelines("""{
+    "adress": "",
+    "app-password": ""
+}""")
+        file.close()
+    raise FileNotFoundError
 
-gmail_user = mail_cred["adress"]
-gmail_password = mail_cred["app-password"]
+gmail_user = ensure(mail_cred["adress"])
+gmail_password = ensure(mail_cred["app-password"])
 
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 server.ehlo()
