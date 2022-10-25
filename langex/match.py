@@ -10,6 +10,7 @@ matches = []
 column_titles = []
 rarely_same = []
 treat_as_empty = []
+col_uni_names = {}
 
 
 def does_it_approx_match(a, b):
@@ -97,6 +98,9 @@ class User:
 
         self.sheet_id = sheet_id
 
+        self.country = get_value_by_title(table_row, col_uni_names["my_country"])
+        self.foreigners_only = True if (get_value_by_title(table_row, col_uni_names["foreigners_only"]) in ("ИСТИНА", "TRUE")) else False
+
         self.name = table_row[0]
         self.email = get_value_by_title(table_row, "Адрес электронной почты")
         self.social_networks = get_value_by_title(
@@ -130,6 +134,11 @@ class User:
         return f"{self.name} #{self.sheet_id}"
 
     def match_with(self, user2):
+        if self.foreigners_only or user2.foreigners_only:
+            if self.country == user2.country:
+                print(f"Rejected match {self.country}({self.foreigners_only}) & {user2.country}({user2.foreigners_only})")
+                return UserMatch(self, user2, 0)
+
         average = 0
         max_possible = 0
 
@@ -155,12 +164,12 @@ class User:
         perc_result = int(round(perc_result * 0.90))
 
         if perc_result >= 100:
-            perc_result = 90 + random.randint(0, 9)
+            perc_result = 80 + random.randint(0, 19)
 
         return UserMatch(self, user2, perc_result)
 
 
-def generate_matches(sheets):
+def generate_matches(sheets, percent_to_match = 40):
     result = [("user#1", "user#2", "match, %", "user#1's email",
                "sent?", "user#2's email", "sent?")]
 
@@ -171,6 +180,9 @@ def generate_matches(sheets):
 
         global treat_as_empty
         treat_as_empty = sheets[key]["treat_as_empty"]
+
+        global col_uni_names
+        col_uni_names = sheets[key]["col_uni_names"]
 
         counter = 1
         for user_table_row in sheets[key]["spreadsheet"][1:]:
@@ -192,7 +204,7 @@ def generate_matches(sheets):
 
         sorted_matches = []
         for mtch in matches:
-            if not mtch in sorted_matches and mtch.percent >= 50:
+            if not mtch in sorted_matches and mtch.percent >= percent_to_match:
                 sorted_matches.append(mtch)
         sorted_matches.sort(key=UserMatch.sort_func)
 

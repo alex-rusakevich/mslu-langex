@@ -10,7 +10,8 @@
             "Country of residence",
             "I use these social networks:",
             "Approximate level of English",
-            "Адрес электронной почты"
+            "Адрес электронной почты",
+            "Match with foreigners only"
         ],
         "rarely_same": [
             "My favourite book is",
@@ -25,6 +26,10 @@
             "i don't have",
             "neither",
             "nope"
-        ]
+        ],
+        "col_uni_names": {
+            "foreigners_only": "Match with foreigners only",
+            "my_country": "Country of residence"
+        }
     }
 }
