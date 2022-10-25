@@ -16,6 +16,8 @@ from langex.mail import msg_gen, send_msg, close_msg_connection
 
 
 def main():
+    prog_start_time = time.time()
+
     parser = argparse.ArgumentParser(description='MSLU langex sort utility')
     parser.add_argument('-sm', '--send-emails', action='store_true',
                         help="Send emails to all partners after generating matches")
@@ -201,7 +203,7 @@ def main():
             './matches.csv', 'r', encoding="utf-8").read())
         done()
 
-    log("Finished.")
+    log("Finished in", time.time() - prog_start_time,"sec.")
 
 
 if __name__ == "__main__":
