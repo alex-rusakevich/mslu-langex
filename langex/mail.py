@@ -4,6 +4,27 @@ import traceback
 from email.message import EmailMessage
 from langex.utils import ensure
 
+MAX_EMAILS_PER_USER = 2
+email_number_per_adress = {}
+
+def inc_email_num(user_email: str):
+    if user_email in email_number_per_adress.keys():
+        email_number_per_adress[user_email] += 1
+    else:
+        email_number_per_adress[user_email] = 1
+
+def can_send_more_emails_to(user_email: str, max_emails_per_user = 2):
+    if max_emails_per_user <= 0:
+        return False
+
+    if user_email in email_number_per_adress.keys():
+        if email_number_per_adress[user_email] >= max_emails_per_user:
+            return False
+    
+    return True
+
+mail_cred = {}
+
 try:
     mail_cred = json.load(open("./mail_cred.json", "r", encoding="utf-8"))
 except FileNotFoundError:
@@ -70,6 +91,10 @@ def close_msg_connection():
 
 
 def send_msg(to, subject, msg_txt):
+    if not can_send_more_emails_to(", ".join(to)):
+        print(f"Can't send more emails to {to}")
+        return False
+
     global server
 
     if isinstance(to, str):
@@ -83,10 +108,11 @@ def send_msg(to, subject, msg_txt):
     msg['To'] = str(", ".join(to))
 
     try:
-        server.connect()
         server.send_message(msg)
 
         print(f'Email sent to {", ".join(to)}')
+        inc_email_num(", ".join(to))
+
         return True
     except Exception as exception:
         print(
