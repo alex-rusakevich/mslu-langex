@@ -136,7 +136,7 @@ class User:
     def match_with(self, user2):
         if self.foreigners_only or user2.foreigners_only:
             if self.country == user2.country:
-                print(f"Rejected match {self.country}({self.foreigners_only}) & {user2.country}({user2.foreigners_only})")
+                # print(f"Rejected match {self.country}({self.foreigners_only}) & {user2.country}({user2.foreigners_only})")
                 return UserMatch(self, user2, 0)
 
         average = 0
